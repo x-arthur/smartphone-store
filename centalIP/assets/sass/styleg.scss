@@ -1,0 +1,129 @@
+@use"./cor";
+@use "./font";
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  header {}
+
+  main {
+    margin: auto;
+
+    #novos {
+      #titulo {
+        margin: 16px auto;
+
+        h1 {
+          @include font.principal;
+          color: cor.$branco-gelo;
+        }
+      }
+
+      .container {
+        .card {
+          background-color: cor.$azul-01;
+          width: 232px;
+          height: 328px; //296 --360 bom 344
+          border-radius: 8px;
+          padding: 24px 32px 16px;
+          margin-bottom: 16px;
+
+        }
+
+        img {
+          width: 100%;
+          border-radius: 4px;
+        }
+
+        .descricao {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 8px 0;
+          color: cor.$branco-gelo;
+
+          h3 {
+            @include font.informativa;
+            font-weight: bold;
+          }
+
+          p {}
+        }
+
+        .preco {
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 8px;
+
+          p {
+            color: cor.$branco-gelo;
+          }
+
+          h2 {
+            color: cor.$branco;
+          }
+        }
+      }
+    }
+  }
+
+  footer {}
+
+  nav {}
+
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+
+    .card {
+      background-color: cor.$azul-01;
+      width: 232px;
+      height: 328px; //296 --360 bom 344
+      border-radius: 8px;
+      padding: 24px 32px 16px;
+      margin-bottom: 16px;
+
+    }
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .descricao {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+      color: cor.$branco-gelo;
+
+      h3 {
+        @include font.informativa;
+        font-weight: bold;
+      }
+
+      p {}
+    }
+
+    .preco {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 8px;
+
+      p {
+        color: cor.$branco-gelo;
+      }
+
+      h2 {
+        color: cor.$branco;
+      }
+    }
+  }
+}

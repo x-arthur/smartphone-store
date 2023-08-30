@@ -1,0 +1,102 @@
+@use "./font";
+@use"./cor";
+
+main {
+
+  #simulador {
+    // background-color: aqua;
+    max-width: 464px;
+
+    h1 {
+      @include font.principal;
+      color: cor.$branco-gelo;
+      margin: 24px auto 40px;
+      font-style: normal;
+      text-indent: 0;
+
+
+    }
+
+    .grupo {
+      margin: 18px auto;
+
+      label {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        margin: 4px auto;
+        color: cor.$branco-gelo;
+      }
+
+      input[type="number"] {
+        min-height: 32px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid transparent;
+      }
+
+      button {
+        display: block;
+        min-height: 40px;
+        width: 164px;
+        margin: 40px auto 0;
+        border-radius: 4px;
+        border: 1px solid transparent;
+      }
+    }
+
+    #valores {
+      margin: 24px auto 144px;
+
+      #container {
+        @include font.normal;
+        color: cor.$branco-gelo;
+        display: flex;
+        justify-content: space-around;
+
+        div {
+          h2 {
+            margin-bottom: 8px;
+
+          }
+
+          #v {
+            list-style: none;
+            line-height: 1.5rem;
+            text-align: center;
+
+            li:first-child {
+              display: none;
+            }
+          }
+        }
+
+        div {
+          h2 {}
+
+          #p {
+            list-style: none;
+            line-height: 1.5rem;
+
+            li:first-child {
+              display: none;
+            }
+          }
+        }
+
+        div {
+          h2 {}
+
+          #t {
+            list-style: none;
+            line-height: 1.5rem;
+
+            li:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

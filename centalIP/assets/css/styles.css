@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+main #simulador {
+  max-width: 464px;
+}
+main #simulador h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #DFEBF2;
+  margin: 24px auto 40px;
+  font-style: normal;
+  text-indent: 0;
+}
+main #simulador .grupo {
+  margin: 18px auto;
+}
+main #simulador .grupo label {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  margin: 4px auto;
+  color: #DFEBF2;
+}
+main #simulador .grupo input[type=number] {
+  min-height: 32px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+main #simulador .grupo button {
+  display: block;
+  min-height: 40px;
+  width: 164px;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+main #simulador #valores {
+  margin: 24px auto 144px;
+}
+main #simulador #valores #container {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #DFEBF2;
+  display: flex;
+  justify-content: space-around;
+}
+main #simulador #valores #container div h2 {
+  margin-bottom: 8px;
+}
+main #simulador #valores #container div #v {
+  list-style: none;
+  line-height: 1.5rem;
+  text-align: center;
+}
+main #simulador #valores #container div #v li:first-child {
+  display: none;
+}
+main #simulador #valores #container div #p {
+  list-style: none;
+  line-height: 1.5rem;
+}
+main #simulador #valores #container div #p li:first-child {
+  display: none;
+}
+main #simulador #valores #container div #t {
+  list-style: none;
+  line-height: 1.5rem;
+}
+main #simulador #valores #container div #t li:first-child {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body main {
+  margin: auto;
+}
+body main #novos #titulo {
+  margin: 16px auto;
+}
+body main #novos #titulo h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #DFEBF2;
+}
+body main #novos .container .card {
+  background-color: #6B9FBF;
+  width: 232px;
+  height: 328px;
+  border-radius: 8px;
+  padding: 24px 32px 16px;
+  margin-bottom: 16px;
+}
+body main #novos .container img {
+  width: 100%;
+  border-radius: 4px;
+}
+body main #novos .container .descricao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  color: #DFEBF2;
+}
+body main #novos .container .descricao h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-weight: bold;
+}
+body main #novos .container .preco {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8px;
+}
+body main #novos .container .preco p {
+  color: #DFEBF2;
+}
+body main #novos .container .preco h2 {
+  color: #f4f4f4;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+  }
+  .container .card {
+    background-color: #6B9FBF;
+    width: 232px;
+    height: 328px;
+    border-radius: 8px;
+    padding: 24px 32px 16px;
+    margin-bottom: 16px;
+  }
+  .container img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .container .descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    color: #DFEBF2;
+  }
+  .container .descricao h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-weight: bold;
+  }
+  .container .preco {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+  }
+  .container .preco p {
+    color: #DFEBF2;
+  }
+  .container .preco h2 {
+    color: #f4f4f4;
+  }
+}
+html {
+  width: 100vw;
+  height: 100vh;
+}
+html body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 96px auto 112px 80px;
+  grid-template-columns: auto;
+  background-color: #0E2F59;
+}
+html body header {
+  background-color: #0F3759;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body header a i {
+  font-size: 2.5rem;
+  color: #DFEBF2;
+}
+html body main {
+  max-width: 1024px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+html body main #welcome h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f4f4f4;
+  margin: 16px auto 4px;
+}
+html body main #welcome h1 span {
+  color: #A7D5F2;
+}
+html body main #welcome p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #DFEBF2;
+  line-height: calc(1rem + 8px);
+  max-width: 768px;
+  text-indent: 16px;
+}
+html body footer {
+  background-color: #0F3759;
+  color: #DFEBF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body #space {
+  height: 80px;
+}
+html body nav {
+  background-color: #092140;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html body nav ul {
+  display: flex;
+}
+html body nav ul a {
+  margin: 0 6px;
+}
+html body nav ul a li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #DFEBF2;
+}
+html body nav ul a li i {
+  flex-wrap: wrap-reverse;
+  font-size: 1.8rem;
+  padding-bottom: 4px;
+}
+
+/*# sourceMappingURL=styles.css.map */

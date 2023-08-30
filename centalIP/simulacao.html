@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/64b8a3d0f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Central do iphone</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><i class="fa-solid fa-c"></i></a>
+    </header>
+    <main>
+      <section id="simulador">
+        <h1>Faça uma simulação e veja o valor de cada parcela</h1>
+
+        <div class="grupo">
+          <label for="valor">Valor do Produto</label>
+          <input type="number" name="valor" id="valor" />
+        </div>
+        <div class="grupo">
+          <label for="entrada">Entrada</label>
+          <input type="number" name="entrada" id="entrada" />
+        </div>
+        <div class="grupo">
+          <button>Calcular</button>
+        </div>
+        <div id="valores">
+          <div id="container">
+            <div>
+              <h2>Vezes</h2>
+              <ul id="v"></ul>
+            </div>
+            <div>
+              <h2>Parcelas</h2>
+              <ul id="p"></ul>
+            </div>
+            <div>
+              <h2>Total</h2>
+              <ul id="t"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><p>&copy; Todos os direitos reservados.</p></footer>
+    <div id="space"></div>
+    <nav>
+      <ul>
+        <a href="./novos.html">
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Novos</p>
+          </li>
+        </a>
+        <a href="./vitrine.html">
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Vitrine</p>
+          </li>
+        </a>
+        <a href="./index.html">
+          <li>
+            <i class="fa-solid fa-home"></i>
+            <p>Home</p>
+          </li>
+        </a>
+        <a href="./seminovos.html">
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>S/novos</p>
+          </li>
+        </a>
+        <a href="./simulacao.html">
+          <li>
+            <i class="fa-solid fa-calculator"></i>
+            <p>Simul.</p>
+          </li>
+        </a>
+      </ul>
+    </nav>
+  </body>
+  <script src="./assets/js/app.js"></script>
+</html>
