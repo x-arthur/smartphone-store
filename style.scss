@@ -5,7 +5,7 @@
 @use"./assets/sass/styleg.scss";
 
 html {
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
 
   body {
@@ -36,7 +36,7 @@ html {
     main {
       // background-color: orange;
       max-width: 1024px;
-      padding: 0 16px;
+      // padding: 0 16px;
       margin: 0 auto;
 
       #welcome {

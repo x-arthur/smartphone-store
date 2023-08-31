@@ -35,7 +35,7 @@ main #simulador .grupo label {
   margin: 4px auto;
   color: #DFEBF2;
 }
-main #simulador .grupo input[type=number] {
+main #simulador .grupo input[type=tel] {
   min-height: 32px;
   width: 100%;
   border-radius: 4px;
@@ -86,11 +86,11 @@ main #simulador #valores #container div #t li:first-child {
 }
 
 body {
-  width: 100vw;
   height: 100vh;
 }
 body main {
   margin: auto;
+  width: 100%;
 }
 body main #novos #titulo {
   margin: 16px auto;
@@ -179,7 +179,6 @@ body main #novos .container .preco h2 {
   }
 }
 html {
-  width: 100vw;
   height: 100vh;
 }
 html body {
@@ -202,7 +201,6 @@ html body header a i {
 }
 html body main {
   max-width: 1024px;
-  padding: 0 16px;
   margin: 0 auto;
 }
 html body main #welcome h1 {

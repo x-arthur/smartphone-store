@@ -3,14 +3,14 @@
 
 
 body {
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
 
   header {}
 
   main {
     margin: auto;
-
+width: 100%;
     #novos {
       #titulo {
         margin: 16px auto;
